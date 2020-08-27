@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background-color: #333;
+}
+
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.orange-color {
+    color: rgb(255,102,0)
+}
+
+.scroll-fix::before {
+    display: block;
+    margin-top: -3rem;
+    height: 3rem;
+    content: '';
+}
+
+/* Navigation */
+
+.navbar-brand {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+nav .navbar-nav, nav .fa-bars {
+    font-size: 1.8rem;
+    text-transform: uppercase
+}
+
+nav .fa-bars {
+    padding: 1rem 2rem;
+}
+
+
+/* Header */
+
+header {
+    position: relative;
+    height: 70rem;
+    background-image: url('./img/header.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+header .btn {
+    font-style: 1.4em;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}
+
+
+.header-text {
+    font-style: 2.2rem;
+}
+
+/* About Me */
+
+.about-boxes h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.about-icon {
+    font-size: 3rem;
+}
+
+#aboutus .btn-link {
+    font-size: 1.8rem
+}
+
+/* Team */
+
+#team {
+    padding: 8rem 0;
+
+}
+
+#team .card-img-top{
+    object-fit: cover;
+}
+
+
+/* Input group */
+
+#contact h3 {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+
+}
+
+#contact .contact-info .fas {
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+#contact .submit-btn {
+    font-size: 1.6rem;
+}
+
+#contact .input-group-lg>.form-control, .input-group-lg>.input-group-append>.btn, .input-group-lg>.input-group-append>.input-group-text, .input-group-lg>.input-group-prepend>.btn, .input-group-lg>.input-group-prepend>.input-group-text {
+    height: calc(1.5em + 3rem + 2px);
+}
